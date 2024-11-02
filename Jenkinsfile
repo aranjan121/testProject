@@ -5,7 +5,7 @@ pipeline {
     choice(
       description: 'Run flyway database migration using latest master branch from prices in what environment?',
       name: 'environments',
-      choices: ['TEST','STAGE',PRE', 'PRO']
+      choices: ['TEST','STAGE','PRE', 'PRO']
     )
   }
   environment{
