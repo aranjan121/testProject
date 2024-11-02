@@ -17,7 +17,7 @@ pipeline {
       steps {
         echo "selectedEnvironment: ${params.environments}"
         bat 'echo USER_NAME : %TEST_USER_USR%'
-        bat echo 'USER_PSW : %TEST_USER_PSW%'
+        bat 'echo USER_PSW : %TEST_USER_PSW%'
       }
     }
   }
