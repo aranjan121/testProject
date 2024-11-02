@@ -16,7 +16,8 @@ pipeline {
     stage("Build") {
       steps {
         echo "selectedEnvironment: ${params.environments}"
-        echo "USER_NAME : $TEST_USER"
+        echo "USER_NAME : $TEST_USER_USR"
+        echo "USER_PSW : $TEST_USER_PSW"
       }
     }
   }
